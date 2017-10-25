@@ -34,3 +34,17 @@ def obscure_function():
     Example of a function that is never tested.
     """
     do_something_strange()
+
+def square(n):
+    """
+    Returns the square of an integer
+    """
+    return n*n
+
+def test_square():
+    """
+    Returns the square of an integer
+    """
+    assert square(2) ==  4
+    assert square(3) ==  9
+    assert square(8) == 64
